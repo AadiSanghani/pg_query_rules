@@ -1,0 +1,5 @@
+comment = 'Runtime query rewriting via regex rules'
+default_version = '0.1.0'
+module_pathname = '$libdir/pg_query_rules'
+relocatable = false
+superuser = true

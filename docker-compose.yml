@@ -1,0 +1,11 @@
+services:
+  pg_extension_dev:
+    build: .
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: testdb
+    volumes:
+      - .:/extension
+    ports:
+      - "5432:5432"
+    command: postgres
